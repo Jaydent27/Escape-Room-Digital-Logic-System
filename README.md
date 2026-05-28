@@ -9,7 +9,9 @@ a combinational circuit that unlocks the door which takes players from the first
 The first room will have three challenges. Once a team has completed all three challenges correctly, the
 system will automatically open the door to the next room. The challenges are as follows:
 
-Challenge 1: Theme: The challenge requires users to use clues to guess a weight
+Challenge 1: 
+
+Theme: The challenge requires users to use clues to guess a weight.
 Teams are given a box full of 3-8 decoder ICs, each weighing 1g. They must place the correct amount
 of ICs on a digital scale that equals a reference weight. The scale returns a 4-bit value of the weight
 (0000 = 2g,1111 = 32g, increment of 0001 = 2g). You must design a circuit which compares the 4-bit
@@ -20,7 +22,9 @@ the weight on the scale is less than the reference and only GREEN will turn on i
 the reference. Each day management manually changes the value of REF using a series of 4 dip
 switches and adjusts the clues accordingly.
 
-Challenge 2: Theme: The challenge requires teams to use clues to connect 4 ICs in a circuit
+Challenge 2: 
+
+Theme: The challenge requires teams to use clues to connect 4 ICs in a circuit.
 Teams are given four different multiplexer ICs; each of the ICs can be connected in the circuit at different
 possible positions to produce either an output of 1 or 0, which are combined into a 4-bit number OUTS.
 The goal is to place the ICs such that the parity (i.e. even or odd number of 1s) of OUTS equals the parity
@@ -30,8 +34,7 @@ otherwise. CORR1 is connected to a buzzer that turns on for 10s when CORR1 = 1.
 ELEC 2141– Term 1, 2025 – Assignment 1 Page 3
 
 Challenge 3:
-Theme: 
-The challenge requires teams to use clues to guess a binary code to open the door
+Theme: The challenge requires teams to use clues to guess a binary code to open the door.
 Teams enter a 4-bit binary code (CODE) using a set of 4 binary pushbuttons. To unlock the door, the 4
 least significant resultant bits of the binary addition of the 4-bit CODE and 4-bit OUTS must equal 0000.
 You must design a circuit that generates an output CORR2 = 1 if this is true and 0 otherwise.
